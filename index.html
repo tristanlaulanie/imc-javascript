@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap"     rel="stylesheet">
+    <title>Calcul d'IMC</title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        Calcul <strong>d'IMC</strong>
+      </h1>
+      <form id="formulaire" action="">
+        <ul>
+          <li>
+            <label for="cm">Votre taille en centimètres (ex: 180)</label>
+            <br />
+            <input id="input-taille" type="number" placeholder="Votre taille en centimètres"/>
+          </li>
+          <br/><br/>
+          <li>
+            <label id="label-poids" for="cm">Votre poids en kg (ex: 80)</label>
+            <br />
+            <input id="input-poids" type="number" placeholder="Votre poids en kg"/>
+          </li>
+        </ul>
+        <br/><br/>
+        <button type="submit" id="button">Calculer un IMC</button><br/>
+        <div id="inputs-check"></div>
+        <output>Votre IMC est de :<div id="output-imc">0</div></output>
+      </form>
+      <p id="result-message">En attente du résultat...⏲</p>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
